@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm -rf $HOME/.dotfiles
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME clone --bare https://github.com/andreleite/dotfiles.git $HOME/.dotfiles
 
 function dot {
