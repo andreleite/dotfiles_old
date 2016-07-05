@@ -1,0 +1,4 @@
+source $HOME/.term
+source $HOME/.prompt
+source $HOME/.alias
+source $HOME/.lang
