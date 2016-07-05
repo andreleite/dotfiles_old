@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf $HOME/.vim
 mkdir -p $HOME/.vim/autoload
 ln -s $HOME/office/pathogen.vim $HOME/.vim/autoload/pathogen.vim
