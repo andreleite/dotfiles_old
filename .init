@@ -1,4 +1,6 @@
+source $HOME/.lang
 source $HOME/.term
 source $HOME/.prompt
 source $HOME/.alias
-source $HOME/.lang
+source $HOME/.path
+source $HOME/.legacy_blad
