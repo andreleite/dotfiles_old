@@ -4,4 +4,5 @@ source $HOME/.env
 source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
-source $HOME/.legacy_blad
+source $HOME/.legacy
+source $HOME/.ctags

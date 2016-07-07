@@ -1,3 +1,4 @@
 alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias sudo='sudo env PATH=$PATH'
 alias ll='ls -la'
+alias tags='ctags -f ~/.ctags $DES/apps'

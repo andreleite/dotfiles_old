@@ -79,3 +79,8 @@ nnoremap <C-m> :Goyo x100%<CR>
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=45
+
+"ctags
+set tags=$HOME/.perl_ctags
+nmap t :tag
+nmap - <C-]>
