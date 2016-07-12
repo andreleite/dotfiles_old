@@ -5,4 +5,3 @@ source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
 source $HOME/.legacy
-source $HOME/.ctags
