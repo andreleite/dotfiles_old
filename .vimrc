@@ -14,6 +14,7 @@ set listchars=tab:▸·,trail:·,eol:¬
 "syntastic
 let g:syntastic_javascript_checkers=['standard']
 let g:syntastic_less_checkers=['csslint']
+let g:syntastic_enable_perl_checker = 1
 let g:syntastic_check_on_open=1
 let g:syntastic_error_symbol='!'
 let g:syntastic_warning_symbol='!'
@@ -57,28 +58,29 @@ filetype plugin on
 "markdown
 let g:vim_markdown_frontmatter=1
 let g:pencil#wrapModeDefault='soft'
-
 augroup pencil
   autocmd!
   autocmd FileType text,markdown,mkd,md call pencil#init()
   autocmd FileType text,markdown,mkd,md set nolist
 augroup END
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
 function! XTermPasteBegin()
   set pastetoggle=<Esc>[201~
   set paste
   return ''
 endfunction
-
-inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
-nnoremap <C-m> :Goyo x100%<CR>
+nnoremap <Leader>m :Goyo x100%<CR>
 
 "close buffer without losing split
-"nnoremap <C-d> :bp\|bd #<CR>
+nnoremap <Leader>d :bp\|bd #<CR>
 
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-map <C-n> :NERDTreeToggle<CR>
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = 'find %s -type f | egrep -v "content|PERL5LIB|releases|static_content|var|Makefile.PL"'
+
 let g:NERDTreeWinSize=45
+map <C-n> :NERDTreeToggle<CR>
+
 
 "nany
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
