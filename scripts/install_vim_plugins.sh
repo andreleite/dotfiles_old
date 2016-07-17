@@ -1,9 +1,8 @@
 #!/bin/bash
 
 rm -rf $HOME/.vim
-mkdir -p $HOME/.vim/autoload
-ln -s $HOME/office/pathogen.vim $HOME/.vim/autoload/pathogen.vim
-mkdir -p $HOME/.vim/bundle
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cd $HOME/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/bling/vim-bufferline
