@@ -76,7 +76,7 @@ nnoremap <Leader>m :Goyo x100%<CR>
 nnoremap <Leader>d :bp\|bd #<CR>
 
 "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_user_command = 'find %s -type f | egrep -v "content|PERL5LIB|releases|static_content|var|Makefile.PL"'
+let g:ctrlp_user_command = 'find %s -type f | egrep -v ".svn|content|PERL5LIB|releases|static_content|var|Makefile.PL"'
 
 let g:NERDTreeWinSize=45
 map <C-n> :NERDTreeToggle<CR>
