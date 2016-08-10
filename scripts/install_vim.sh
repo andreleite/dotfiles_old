@@ -5,6 +5,6 @@ cd vim-7.4.1977
 ./configure --prefix=$HOME/local
 make
 make install
-# cd ~
-# rm vim.tar.gz
-# rm -rf vim-7.4.1977
+cd
+rm vim.tar.gz
+rm -rf vim-7.4.1977
