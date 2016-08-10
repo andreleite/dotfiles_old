@@ -100,8 +100,8 @@ set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 			" than 50 lines of registers
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
-set ts=4
-set shiftwidth=4
+set ts=2
+set shiftwidth=2
 set ai
 set termencoding=utf-8
 set mouse=n
