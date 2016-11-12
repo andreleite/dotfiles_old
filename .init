@@ -4,5 +4,3 @@ source $HOME/.env
 source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
-source $HOME/.node
-source $HOME/.bitcoin

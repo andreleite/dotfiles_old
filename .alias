@@ -1,9 +1,6 @@
 alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias sudo='sudo env PATH=$PATH'
 alias ll='ls -la'
-#alias tags='ctags -f ~/.perl_ctags $DES/apps'
-alias tags='ctags -f ~/.perl_ctags $HOME/code/legacy/apps'
-
 
 buscar()
 	{
