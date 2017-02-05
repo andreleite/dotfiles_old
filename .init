@@ -1,5 +1,6 @@
 source $HOME/.lang
 source $HOME/.term
+source $HOME/.history
 source $HOME/.env
 source $HOME/.prompt
 source $HOME/.alias
