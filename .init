@@ -4,3 +4,6 @@ source $HOME/.env
 source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
+source $HOME/.ruby
+source $HOME/.node
+source $HOME/.jenv
