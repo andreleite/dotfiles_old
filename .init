@@ -1,6 +1,8 @@
+source $HOME/.bash
 source $HOME/.lang
 source $HOME/.term
 source $HOME/.env
 source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
+source $HOME/.git

@@ -8,12 +8,12 @@ runtime macros/matchit.vim
 let g:gitgutter_sign_column_always = 1
 
 "invisible chars
-"set list
+set list
 set listchars=tab:▸·,trail:·,eol:¬
 
 "syntastic
-let g:syntastic_javascript_checkers=['standard']
-let g:syntastic_less_checkers=['csslint']
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_less_checkers=['stylelint']
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_check_on_open=1
 let g:syntastic_error_symbol='!'
@@ -39,8 +39,8 @@ set laststatus=2
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab
 set autoindent
+set expandtab
 
 "folding
 set foldmethod=indent
