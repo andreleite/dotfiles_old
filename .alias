@@ -1,24 +1,3 @@
 alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias sudo='sudo env PATH=$PATH'
 alias ll='ls -la'
-
-buscar()
-	{
-	clear;
-	CUR_DIR=`pwd`;
-	echo DIRECTORIO ACTUAL: $CUR_DIR;
-	echo;
-	
-	if [ $1 = "-f" ]; then
-		find $CUR_DIR -name $2 | more
-	fi
-	if [ $1 = "-s" ]; then
-		grep -r -n "sub.$2" $CUR_DIR/* | grep -v svn | more
-	else
-		if [ $1 = "" ]; then
-			echo Ingresa el patron!
-			return
-		fi
-		 grep -r -n $1 $CUR_DIR/* | grep -v svn | more
-	fi
-	}

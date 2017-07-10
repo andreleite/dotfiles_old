@@ -1,4 +1,3 @@
-source $HOME/.bash
 source $HOME/.lang
 source $HOME/.term
 source $HOME/.history
@@ -7,6 +6,5 @@ source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
 source $HOME/.git
-source $HOME/.ruby
 source $HOME/.node
-source $HOME/.jenv
+# source $HOME/.jenv

@@ -30,6 +30,7 @@ set wrap
 syntax on
 set ruler
 set noswapfile
+set colorcolumn=80
 
 "tabline & statusbar
 set showtabline=2
