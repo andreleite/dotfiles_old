@@ -22,6 +22,9 @@ let g:syntastic_warning_symbol='!'
 "SETTINGS
 set backspace=2
 
+"color
+set t_Co=256
+
 "misc
 set nocompatible
 set encoding=utf-8

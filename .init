@@ -6,5 +6,5 @@ source $HOME/.prompt
 source $HOME/.alias
 source $HOME/.path
 source $HOME/.git
-source $HOME/.node
+# source $HOME/.node
 # source $HOME/.jenv
