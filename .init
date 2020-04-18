@@ -1,7 +1,1 @@
-source $HOME/.lang
-source $HOME/.term
-source $HOME/.history
-source $HOME/.env
-source $HOME/.prompt
-source $HOME/.alias
-source $HOME/.path
+alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

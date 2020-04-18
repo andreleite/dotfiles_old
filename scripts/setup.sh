@@ -1,23 +1,24 @@
 #!/bin/bash
 
-git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME clone --bare https://github.com/andreleite/dotfiles.git $HOME/.dotfiles
+set -e
+
+git config --global user.email "andre@andre.io"
+git config --global user.name "André Leite"
+git config --global push.default simple
+
+git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME clone --bare git@github.com:andreleite/dotfiles.git $HOME/.dotfiles
 
 function dot {
   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
 
-mkdir -p .dotfiles-backup
-
 dot checkout
 
 dot config status.showUntrackedFiles no
 
-if [ -f "$HOME/.bash_profile" ]; then
-  BASH_CONFIG_FILE="$HOME/.bash_profile"
-elif [ -f "$HOME/.bashrc" ]; then
-  BASH_CONFIG_FILE="$HOME/.bashrc"
-fi
+BASH_CONFIG_FILE="$HOME/.profile"
 
 INIT_COMMAND="source $HOME/.init"
 
 grep -Fq "$INIT_COMMAND" $BASH_CONFIG_FILE || echo $INIT_COMMAND >> $BASH_CONFIG_FILE
+
